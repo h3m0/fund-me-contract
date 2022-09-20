@@ -1,0 +1,18 @@
+dependencies:
+  # - <organization/repo>@<version>
+  - smartcontractkit/chainlink-brownie-contracts@1.1.1
+compiler:
+  solc:
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'
+
+dotenv: .env
+
+wallets:
+  from_key: ${private_key}
+
+
+  rinkeby:
+    verify: True
+  goerli:
+    pfaddress: '0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e'
